@@ -16,6 +16,9 @@
 <p>
 <?php
 include("conn/conn.php");
+include ("index_01.php");
+include ("index_02.php");
+include ("index_03.php");
 if(isset($_GET['page'])){
 		$page=$_GET['page'];
 	}else{
@@ -24,8 +27,10 @@ if(isset($_GET['page'])){
 	  $page_count=3;
 	  $select=mysql_query("select * from tb_category",$conn);
 	  $row=@mysql_num_rows($select);
+      //总页数
 	  $page_page=ceil($row/$page_count);
-	  $offect=($page-1)*$page_count;   //获取上一页的最后一条记录，从而计算下一页的起始记录
+      //获取上一页的最后一条记录，从而计算下一页的起始记录
+	  $offect=($page-1)*$page_count;
 	  $selects=mysql_query("select * from tb_category where id order by id desc limit $offect,$page_count",$conn);
 	  while($array=@mysql_fetch_array($selects)){
 	  $icon=substr($array['icon'],3,30);
@@ -60,6 +65,10 @@ if(isset($_GET['page'])){
     <a href="index.php?page=<?php echo $page_page; ?>">尾页</a></div></td>
   </tr>
 </table>
+<?php
+include("index_05.php");
+include("index_06.php");
 
+?>
 </body>
 </html>
