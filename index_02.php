@@ -45,10 +45,10 @@
 	  ?>
       <td width="426" height="29">
         <span class="STYLE1">
-          用户名：
-          <input name="user" type="text" size="20" />
-          密码：
-          <input name="pwd" type="password" size="20" />
+          用户名:
+          <input name="user" type="test" size="20"/>
+          密码:
+          <input name="pwd" type="password" size="20"/>
         </span>
       </td>
       <td width="52" height="29"><input type="image" name="imageField2" src="images/02_05.gif" onclick="return check();" /></td>
