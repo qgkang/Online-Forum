@@ -82,7 +82,7 @@ if(isset($_GET['id'])){
         $offect=($page-1)*$page_count;   //获取上一页的最后一条记录，从而计算下一页的起始记录
 ?>
 <?php
-if(mysql_num_rows($select2)>=1){
+if(mysql_num_rows($select2) >= 1){
     while($array1=mysql_fetch_array($select2)){
         $select3=mysql_query("select * from tb_user where username='".$array1['username']."'",$conn);
         $array2=mysql_fetch_array($select3);
@@ -101,7 +101,7 @@ if(mysql_num_rows($select2)>=1){
                 <p align="center"><span class="STYLE2">QQ：<?php echo $array2['qq'];?></span>    </td>
             <td colspan="3" align="left" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><span class="STYLE2"><?php echo $array1['resume_contents'];?></span></td>
         </tr>
-        <?
+        <?php
     }
 }
 ?>
@@ -135,12 +135,11 @@ if(mysql_num_rows($select2)>=1){
                 <?php }?>
 
                 <td width="11%">&nbsp;</td>
-            </tr
-            >
+            </tr>
         </table>
     </td>
 </tr>
-</table>
+    </table>
     <?php
     include("index_05.php");
     include("index_06.php");
