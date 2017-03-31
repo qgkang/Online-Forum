@@ -23,11 +23,7 @@ if(isset($_POST['user']) && isset($_POST['pwd'])){
         echo "<script>alert('login failed!'); window.location.href='index.php';</script>;";
     }
 }
-
-
-
 //表单数据保存到session
-
 ?>
 
 
