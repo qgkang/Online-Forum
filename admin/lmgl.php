@@ -38,8 +38,7 @@ if(isset($_POST['noderator']) and $_POST['zhuijia']=="追加栏目"){
 }
 ?>
 <table width="100%" border="1" align="center" cellpadding="1" cellspacing="1" bordercolor="#FFFFFF" bgcolor="#E1DAEA">
-  <form action="index.php?lmbs=栏目管理" method="post" 
-        enctype="multipart/form-data" name="myform" id="myform">
+  <form action="index.php?lmbs=栏目管理" method="post" enctype="multipart/form-data" name="myform" id="myform">
     <tbody>
       <tr>
         <td height="30" colspan="2" align="center" bgcolor="#FFFBF0" class="STYLE4">&nbsp;栏目管理</td>
@@ -47,25 +46,20 @@ if(isset($_POST['noderator']) and $_POST['zhuijia']=="追加栏目"){
       </tr>
       <tr>
         <td width="170" height="30" align="middle" bgcolor="#FFFBF0" class="style1">&nbsp;版主:
-          <input 
-            id="noderator" size="15" name="noderator" />
+          <input id="noderator" size="15" name="noderator" type="text" />
         </td>
         <td width="200" align="middle" bgcolor="#FFFBF0" class="style1">所属专区:
-          <select id="category" size="1" 
-            name="category">
+          <select id="category" size="1" name="category">
               <option value="asp" selected="selected">ASP</option>
-              <option 
-              value="jsp">JSP</option>
+              <option value="jsp">JSP</option>
               <option value="delphi">Delphi</option>
               <option value="visual basic">Visual Basic</option>
-              <option 
-              value="visual foxpro">Visual Foxpro</option>
-              <option 
-              value="visual c++">Visual C++</option>
-              <option value="power">Power 
-                Buider</option>
+              <option value="visual foxpro">Visual Foxpro</option>
+              <option value="visual c++">Visual C++</option>
+              <option value="power">Power Buider</option>
               <option value=".net">.net</option>
-          </select></td>
+          </select>
+        </td>
         <td align="left" valign="center" bgcolor="#FFFBF0" class="style1">&nbsp;&nbsp;图标:
           <input type="radio" name="icon" value="<?php echo $top;?>" />
             <img src='../images/tx/photo.jpg' width='45' height='40' />
