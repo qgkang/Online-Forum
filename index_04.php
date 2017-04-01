@@ -16,9 +16,6 @@
 <p>
 <?php
 include("conn/conn.php");
-include ("index_01.php");
-include ("index_02.php");
-include ("index_03.php");
 if(isset($_GET['page'])){
 		$page=$_GET['page'];
 	}else{
@@ -65,10 +62,5 @@ if(isset($_GET['page'])){
     <a href="index.php?page=<?php echo $page_page; ?>">尾页</a></div></td>
   </tr>
 </table>
-<?php
-include("index_05.php");
-include("index_06.php");
-
-?>
 </body>
 </html>

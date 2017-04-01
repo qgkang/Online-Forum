@@ -49,7 +49,7 @@ if(isset($_GET['id'])){
             <td width="188" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><div align="center"><span class="STYLE6">发起人</span></div></td>
             <td width="504" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><span class="STYLE6">主题：<?php echo $array['subject'];?></span></td>
             <td width="204" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><span class="STYLE6">发布日期：<?php echo $array['release_date'];?></span></td>
-            <td width="74" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><div align="center"><a href="hfzt.php?h_id=<?php echo $id;?>">回复</a></div></td>
+            <td width="74" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><div align="center"><a href="reply_theme.php?h_id=<?php echo $id;?>">回复</a></div></td>
         </tr>
         <tr>
             <td height="106" align="center" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><?php echo $array_user['username'];?>
@@ -64,7 +64,7 @@ if(isset($_GET['id'])){
             <td width="188"  bo bgcolor="#FFFDF1"></td>
             <td width="504"  bgcolor="#FFFDF1"></td>
             <td width="204"  bgcolor="#FFFDF1"></td>
-            <td width="74"   bgcolor="#FFFDF1"><div align="center"><a href="hfzt.php?h_id=<?php echo $id;?>">回复</a></div></td>
+            <td width="74"   bgcolor="#FFFDF1"><div align="center"><a href="reply_theme.php?h_id=<?php echo $id;?>">回复</a></div></td>
         </tr>
 <?php } ?>
 <?php
@@ -91,7 +91,7 @@ if(mysql_num_rows($select2) >= 1){
             <td bordercolor="#FFFFFF" bgcolor="#FFFDF1"><div align="center" class="STYLE6">回复人</div></td>
             <td bordercolor="#FFFFFF" bgcolor="#FFFDF1"><span class="STYLE6">回复标题：<span class="STYLE2"><?php echo $array1['resume_subject'];?></span></span></td>
             <td colspan="2" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><span class="STYLE6"><span class="STYLE6">回复日期：</span><?php echo $array1['resume_date'];?>
-                    <div align="center"><a href="hfzt.php?h_id=<?php echo $id;?>"></a></div></td>
+                    <div align="center"><a href="reply_theme.php?h_id=<?php echo $id;?>"></a></div></td>
         </tr>
         <tr>
             <td height="133" align="center" bordercolor="#FFFFFF" bgcolor="#FFFDF1"><span class="STYLE2"><?php echo $array1['username'];?></span>
